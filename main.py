@@ -84,7 +84,6 @@ nltk.download('punkt_tab', download_dir=nltk_data_path)
 cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-6-v2") 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-AZURE_CONTAINER = "pmc-fulltext"
 CHROMA_DB_DIR = "./chroma_db"
 COLLECTION_NAME = "medical_docs"
 DOWNLOADED_MAP_PATH = "downloaded_map.json"
